@@ -3,7 +3,7 @@
 
 <!-- Tabla -->
 <div class="container">
-  <table class="table table-dark tabla-striped mt-4">
+  <table class="table table-dark table-striped mt-4">
       <thead>
         <tr>
           <th scope='col'>Id</th>
@@ -36,5 +36,5 @@
 </div>
   
   <div class="container text-center my-5">
-    <a href="/" class="btn btn-danger">Regresar</a>
+    <a href="/" class="btn btn-secondary">Inicio</a>
   </div>

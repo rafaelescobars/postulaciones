@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 //Agregado
 use App\Models\Postulante;
+use App\Http\Requests\Crud;
 //
 
 class PostulanteController extends Controller

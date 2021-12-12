@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
     use App\Models\Postulante;
 
     use Illuminate\Http\Request;
+
+    use App\Http\Requests\Crud;
     //
 
 /*
@@ -48,7 +50,7 @@ Route::get('list/{id}/delete', function ($id) {
 });
 
 
-Route::post('form',function(Request $request){
+Route::post('form',function(Crud $request){
     
     $postulantes= new Postulante();
     
@@ -68,7 +70,7 @@ Route::post('form',function(Request $request){
     return redirect('list');
 });
 
-Route::put('list/{id}/edit', function (Request $request, $id) {
+Route::put('list/{id}/edit', function (Crud $request, $id) {
     
     $postulante=Postulante::find($id);
     
